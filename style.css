@@ -339,15 +339,24 @@ a:hover {
 }
 
 .unity-container {
-  margin-top: 40px;
-  padding: 20px;
+  margin-top: 60px;
   background: #f5f0ff;
-  border-radius: 20px;
+  padding: 20px;
+  border-radius: 16px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.unity-container h2 {
+  color: #743fbf;
+  margin-bottom: 16px;
 }
 
 .unity-frame {
+  width: 100%;
+  max-width: 960px;
+  height: 600px;
+  border: none;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
 }
