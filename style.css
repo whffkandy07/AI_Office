@@ -345,15 +345,15 @@ a:hover {
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  overflow: hidden;
+  overflow: hidden; /* 이거 꼭 필요! */
 }
 
 .unity-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 75%; /* 600 / 960 = 62.5% → 16:10 비율 유지 */
+  padding-top: 75%; /* 4:3 비율 = 600 / 800 */
   border-radius: 12px;
-  overflow: hidden;
+  overflow: hidden; /* iframe 안 튀어나오게 */
   box-shadow: 0 0 12px rgba(0,0,0,0.15);
 }
 
@@ -364,4 +364,10 @@ a:hover {
   width: 100%;
   height: 100%;
   border: none;
+  overflow: hidden;
+  scrollbar-width: none; /* Firefox */
+}
+
+.unity-frame::-webkit-scrollbar {
+  display: none; /* Chrome, Edge 등 */
 }
