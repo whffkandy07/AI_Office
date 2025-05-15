@@ -337,3 +337,17 @@ a:hover {
 .close-btn:hover {
   color: #222;
 }
+
+.unity-container {
+  margin-top: 40px;
+  padding: 20px;
+  background: #f5f0ff;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.unity-frame {
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
