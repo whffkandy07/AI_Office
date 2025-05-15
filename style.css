@@ -340,23 +340,28 @@ a:hover {
 
 .unity-container {
   margin-top: 60px;
+  text-align: center;
   background: #f5f0ff;
   padding: 20px;
   border-radius: 16px;
-  text-align: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
-.unity-container h2 {
-  color: #743fbf;
-  margin-bottom: 16px;
+.unity-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 62.5%; /* 600 / 960 = 62.5% → 16:10 비율 유지 */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
 }
 
 .unity-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 960px;
-  height: 600px;
+  height: 100%;
   border: none;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
 }
